@@ -102,11 +102,16 @@ public class TicketMachine
         return amountToRefund;
     }
     
-    public int emptyMachine()
+    public void emptyMachine()
     {
-        int dinero;
-        dinero = total;
-        total = 0;
-        return dinero;
+        if (balance = 0){
+            int dinero;
+            dinero = total;
+            total = 0;
+            return dinero;
+        }
+        else{
+            System.out.println(-1);
+        }
     }
 }
